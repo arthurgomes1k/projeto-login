@@ -9,9 +9,11 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /* CONFIGURAÇÃO PARA TABLET */
+
     section#login {
         width: 80vw;
+        height: 38%;
     }
 
     section#login > div#imagem {
@@ -26,9 +28,11 @@ Grandes telas: acima de 1200px
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) { /* CONFIGURAÇÃO PARA DESKTOP */
+
     section#login {
         width: 900px;
+        height: 55%;
     }
 
     section#login > div#imagem {
@@ -43,11 +47,17 @@ Grandes telas: acima de 1200px
     }
 
     div#formulario > h1 {
-        font-size: 1.2em;
+        font-size: 1.6em;
+        padding-top: 20px;
     }
 
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1em;
+        padding: 30px 0px;
+    }
+
+    form > input[type=submit] {
+        margin-top: 30px;
     }
 
 }

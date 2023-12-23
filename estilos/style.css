@@ -3,7 +3,7 @@
 /*
     Paleta de cores
     Verde: #49a09d
-    Lilás: #5d2c82
+    Azul escuro: #04122a
 */
 
 * {
@@ -14,7 +14,7 @@
 }
 
 body, html {
-    background-color: #5d2c82;
+    background-color: #04122a;
     height: 100vh;
     width: 100vw;
 }
@@ -23,7 +23,7 @@ main {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background: #5d2c82 url(../imagens/mountain-black.jpg) no-repeat;
+    background: #04122a url(../imagens/mountain-black.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -32,7 +32,6 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     overflow: hidden;
     background-color: white;
@@ -41,13 +40,14 @@ section#login {
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5d2c82 url(../imagens/1304733.jpeg) no-repeat;
+    background: #04122a url(../imagens/1304733.jpeg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     height: 200px;
@@ -68,13 +68,45 @@ div#formulario > p {
 }
 
 form > div.campo {
+    background-color: #04122a;
+    border: 2px solid #04122a;
     display: block;
+    width: 100%;
     height: 40px;
+    border-radius: 10px;
     margin: 5px 0px;
 }
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #5f9e9c;
+    color: black;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 4px;
+    transform: translateY(-12px);
+    transition: all .3s ease;
+}
+
+div.campo > input:focus-within {
+    background-color: #abdad8;
+}
+
+div.campo > input::placeholder {
+    color: rgba(255, 255, 255, 0.705);
 }
 
 form > input[type=submit] {
