@@ -34,11 +34,12 @@ section#login {
     left: 50%;
 
     overflow: hidden;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.603);
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(2px);
 
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
