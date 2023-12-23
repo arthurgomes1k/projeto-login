@@ -47,7 +47,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: #5d2c82 url(../imagens/window-modern.jpg) no-repeat;
+    background: #5d2c82 url(../imagens/1304733.jpeg) no-repeat;
     background-size: cover;
     background-position: bottom center;
     height: 200px;
@@ -58,3 +58,11 @@ section#login > div#formulario {
     padding: 10px;
 }
 
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+}
